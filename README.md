@@ -1,2 +1,4 @@
-# estudio_c_bash_so
-Repositorio para estudiar y practicar C, bash y cosas de sistemas operativos.
+# Estudio Bash, C y SO
+Contenido:
+Rejunte de código viejo escrito en C para revisar.
+Notas y estudio rápido de Bash, C y SO.
