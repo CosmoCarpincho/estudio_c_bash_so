@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1694787832 source:/home/cosmo/repos/estudio_c_bash_so/codeblocks_c/main.c
+	<stdio.h>
+	<stdlib.h>
+
