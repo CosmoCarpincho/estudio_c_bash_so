@@ -1,0 +1,14 @@
+Bulones;;;
+codigo;nombre;stock;precioUnitario
+unsigned int;char[50];unsigned int;double
+1;nombre1;283;15301.82
+2;nombre2;362;48066.6
+3;nombre3;224;35924.26
+4;nombre4;175;25322.04
+5;nombre5;272;64469.6
+6;nombre6;112;8731.74
+7;nombre7;466;1767.91
+8;nombre8;405;83587.29
+9;nombre9;279;41987.72
+10;nombre10;123;35700.93
+0;0;0;0

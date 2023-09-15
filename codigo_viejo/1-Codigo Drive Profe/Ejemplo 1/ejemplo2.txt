@@ -1,0 +1,26 @@
+EJEMPLO DE CLASE - SEGUNDO PARCIAL - 15-11-2021
+
+
+Ejemplo: Empresa de servicios de limpieza
+
+Se tiene un listado de servicios de lavandería con la siguiente información: servicio y precio.
+Todos los que acceden tienen un código de cliente, durante el día realiza el pedido de por medio de una App: código de cliente, servicio y cantidad de prendas, llega a la lavandería por medio de un delivery. Toda esta información se va apilando y los pedidos se aceptan hasta las 15hs. Ahí en ese momento hay un cierre para realizar la planificación de las tareas de la lavandería, en ese momento se desapila los pedidos y se genera una lista de trabajo con la siguiente información: código de cliente, servicio, cantidad de prendas y monto a abonar.
+Además sobre esta lista de trabajo se desea saber, ( se debe recorrer en forma recursiva):
+Cantidad de cliente 
+Cantidad de dinero recaudado
+
+
+
+ESTRATEGIA DE SOLUCIÓN
+
+1 CARGAR UNA LISTA CON PRECIOS DE SERVICIOS
+2. CARGA DE LA PILA POR MEDIO DE LA APP HASTA LAS 15HS.
+    a.CARGO LA PILA CON DATOS DE LA APP
+    b.PREGUNTO SON LAS 15HS
+3.TERMINACIÓN DE LA CARGA DE LA APP, CREAR LISTA DE TRABAJOS DE LAVANDERÍA - CONSOLIDACIÓN DE LA LISTA
+CALCULO EL PRECIO TOTAL DE SERVICIO POR CANTIDAD DE PRENDAS
+INSERTO LISTA LAVANDERÍA
+OBTENER EL TOTAL DE SERVICIOS VENDIDOS POR LA APP
+CANTIDAD DE TICKET DEL DIA, RECURSIVA
+OBTENER EL MONTO DE SERVICIOS VENDIDOS POR LA APP 
+PROCESO RECURSIVO PARA OBTENER EL TOTAL DE LO RECAUDADO.
