@@ -16,6 +16,8 @@ int main() {
   printf("Numero: %d\n", n2);
 
   // Se usa para definir tipos de datos formados por structs.
+  // En el kernel no se usa porque dificulta la lectura ya que no se sabe el
+  // tipo de dato.
 
   typedef struct persona {
     char nombre[30];
