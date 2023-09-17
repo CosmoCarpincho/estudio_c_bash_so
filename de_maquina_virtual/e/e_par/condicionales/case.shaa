@@ -1,0 +1,15 @@
+case <expresion> in
+        <patron 1>)
+                comandos
+                ;;
+        <patron 2>)
+                comandos
+                ;;
+        *)
+                comandos
+                ;;
+esac
+
+
+ej:
+

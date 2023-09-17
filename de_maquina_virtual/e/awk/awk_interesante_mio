@@ -1,0 +1,1 @@
+awk ' {if (length(/usr/bin/zsh) > max) max = length(/usr/bin/zsh); texto = /usr/bin/zsh }END { print max n texto}' texto.txt

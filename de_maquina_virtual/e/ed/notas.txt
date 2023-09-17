@@ -1,0 +1,32 @@
+ed es un editor de texto de consola. Orientado a lineas.
+Tiene dos modos. comando y input.
+
+Video con explicaciones: 
+https://www.youtube.com/watch?v=mRZsV7aMK0I&ab_channel=cs631apue
+a : append. Es para gregar lineas
+q : quit para salir
+w : write para guardar
+. : para dar el final del modo input (insercion)
+
+$ : para ir al final 
+<n> : numero para indicar por ejemplo una linea
+1l : 1 l  . Linea 1
+
+1,$p para ver todas las lineas
+,p es la forma corta de lo mismo
+
+p  : es de print. de imprimir con el formato de los caracteres especiales. Cuando pones ,p es imprimir todo. p solo imprime la linea
+4m5 : intercambia el lugar de la linea 4 por la 5
+
+/ es para buscar una palabra. Cuando encuentra esa palabra te posiciona en esa linea
+
+s/<a sustituir>/<sustitucion>/
+g/<palabra/p  g de global. palabra que se busca. p de imprimir
+g/<palabra/n  Lo mismo mostrando numeros servira para ver con numeros
+l para ver la linea como p pero sin formatear los caracteres especiales
+para atacar varias lineas
+<inicio>,<fin><comando> ;;; no funciona para todos los comandos
+ej: quiero cambiar las a por x de la linea 4 a la 6
+4,6s/a/x
+
+d ;;; delete borra la linea donde estas parado.

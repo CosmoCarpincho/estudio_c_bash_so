@@ -1,0 +1,17 @@
+ls -l
+ls -l / | awk '{print $1}'
+
+$1 es la primer columna.
+Por defecto se utiliza como separador el espacio. 
+
+# Como cambiar el delimitador -F (field_separator)
+cat /etc/passwd | awk -F':' '{print $1 " "$7} 
+
+# Operaciones aritmeticas simples
+Ej: mostar tamanio de ls en formato legible
+
+ls -l / | awk '{print $1 " Tamanio:" ($4/1024) " KB"}'
+
+# Realizar operaciones
+echo 11 22 | awk '{print $1 + $2}'
+

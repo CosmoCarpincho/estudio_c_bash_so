@@ -1,0 +1,9 @@
+Hola que tal
+La idea es insertar despues de que aparesca la palabra CASA
+CASA
+Esta linea
+Esta linea tiene CASA y vemos que pasa
+Hola 
+Chau casa
+Casa
+Hola

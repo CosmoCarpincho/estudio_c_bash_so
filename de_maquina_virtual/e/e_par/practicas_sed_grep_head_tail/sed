@@ -1,0 +1,14 @@
+[/regex/]comando
+
+si es el comando s continua poniendo barras s//
+
+s/hola/chau/g
+
+sed s/hola/chau/
+
+
+sed" /hola/aHola que tal"
+
+
+
+

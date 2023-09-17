@@ -1,0 +1,9 @@
+# Cuando se hace awk en una linea que caracter no se puede usar?
+El apostrofe. Ya que aunque lo pongas dentro de un comentario se va a tomar como caracter especial
+Ej que no funciona:
+awk 'BEGIN { print "hello"} #let's be cute'
+
+Poner una \ tampoco cambia ya que no es caracter especial dentro de awk
+
+En mi pc no funciona awk "BEGIN { print \"Don't Panic!\" }" aunque en el manual si.
+
