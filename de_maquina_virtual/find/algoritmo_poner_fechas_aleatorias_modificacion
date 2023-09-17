@@ -1,0 +1,2 @@
+find . -type f -exec bash -c 'for archivo ; do sleep 0.01; numero=$(( (($RANDOM * 100000)  % 1687388929) + 1  )); echo $numero ; touch -d @$numero $archivo; done' {} +
+

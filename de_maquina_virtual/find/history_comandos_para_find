@@ -1,0 +1,630 @@
+    1  cd
+    2  ll
+    3  echo $SHELL
+    4  which zsh
+    5  bat
+    6  dls
+    7  alias
+    8  ls --color=auto
+    9  ls
+   10  ll
+   11  ls -la
+   12  lsd
+   13  lsd -la
+   14  alias ls=lsd
+   15  ls
+   16  ls -la
+   17  cd 
+   18  vim .zshrc
+   19  exit
+   20  cd
+   21  cd practicas
+   22  ls
+   23  mkdir tp2/
+   24  ls
+   25  cd tp2
+   26  ll
+   27  vim ej01.sh
+   28  vim ej02.sh
+   29  ls -la
+   30  sudo chmor 744 ej02.sh
+   31  sudo chmod 744 ej02.sh
+   32  ls -la
+   33  alias l="ls -la"
+   34  l
+   35  ./ej02.sh
+   36  vim ej02.sh
+   37  ./ej02.sh
+   38  vim ej03.sh
+   39  wc -l /etc/passwd
+   40  dir=/etc
+   41  echo $dir
+   42  man dir
+   43  man find
+   44  find -type f $dir
+   45  find -type f
+   46  find $dir -type f
+   47  find $dir -type f -exec wc {} /
+   48  find $dir -type f -exec wc {};/ 
+   49  find $dir -type f -exec wc {};\/ 
+   50  find $dir -type f -exec wc {}; + 
+   51  find $dir -type f -exec wc {} + 
+   52  find $dir -type f -exec wc {} + 2> /dev/null
+   53  find $dir -type f -exec wc -l {} + 2> /dev/null
+   54  find $dir -type f -exec wc -l {} + 2> /dev/null | awk '{total+=$1} END{print total}' 
+   55  find $dir -type f -exec wc -l {} + 2> /dev/null | awk '{total+=$1} END{print total/2}' 
+   56  find $dir -type f -exec wc -l {} + 2> /dev/null | awk '/!total/{total+=$1} END{print total/2}' 
+   57  find $dir -type f -exec wc -l {} + 2> /dev/null | awk '/!total/{total+=$1} END{print total}' 
+   58  find $dir -type f -exec wc -l {} + 2> /dev/null | awk '/!total/ {total+=$1} END{print total}' 
+   59  find $dir -type f -exec wc -l {} + 2> /dev/null | awk '/(^total)/ {total+=$1} END{print total}' 
+   60  find $dir -type f -exec wc -l {} + 2> /dev/null | awk '/(?!total)/ {total+=$1} END{print total}' 
+   61  find $dir -type f -exec wc -l {} + 2> /dev/null | awk '!/total/ {total+=$1} END{print total}' 
+   62  find $dir -type f -exec wc -l {} + 2> /dev/null | awk '!/total/ {total+=$1 print "El archivo:", $2, "tiene", $1, "lineas"} END{print "El total de lineas de todos los archivos es" total}' 
+   63  find $dir -type f -exec wc -l {} + 2> /dev/null | awk '!/total/ {total+=$1 print "El archivo:", $2, "tiene", $1, "lineas"} END{print "El total de lineas de todos los archivos es:", total}' 
+   64  find $dir -type f -exec wc -l {} + 2> /dev/null | awk '!/total/ {total+=$1 print "El archivo:", $2, "tiene", $1, "lineas"} END{print "El total de lineas de todos los archivos es:", $total}' 
+   65  find $dir -type f -exec wc -l {} + 2> /dev/null | awk '!/total/ {total+=$1 print "El archivo:", $2, "tiene", $1, "lineas"} END {print "El total de lineas de todos los archivos es:",total}' 
+   66  find $dir -type f -exec wc -l {} + 2> /dev/null | awk '!/total/ {total+=$1 print "El archivo:", $2, "tiene", $1, "lineas"}\n'
+   67  find $dir -type f -exec wc -l {} + 2> /dev/null | awk '!/total/ {total+=$1; print "El archivo:", $2, "tiene", $1, "lineas"}\n'
+   68  find $dir -type f -exec wc -l {} + 2> /dev/null | awk '!/total/ {total+=$1; print "El archivo:", $2, "tiene", $1, "lineas"} END {print "El total de lineas de todos los archivos es:",total}' 
+   69  find $dir -type f -exec wc -l {} + 2> /dev/null | awk '!/total/ {total+=$1; print "El archivo:", $2, "tiene", $1, "lineas"} END {print "El total de lineas de todos los archivos es:",total}'
+   70  ll
+   71  cd
+   72  cd practicas
+   73  ls
+   74  ./ej10anexo.sh /etc
+   75  sudo chmod 744 ej10anexo.sh
+   76  ./ej10anexo.sh /etc
+   77  ./ej10anexo.sh ~/
+   78  man find
+   79  ./ej10anexo.sh ~/
+   80  wc /home/so/script.sh
+   81  wc -l /home/so/script.sh
+   82  man tr
+   83  ./ej10anexo.sh ~/
+   84  wc -l /home/so/script.sh
+   85  wc -l /home/so/script.sh | cut -f 1
+   86  wc -l /home/so/script.sh | cut -d " " -f 1
+   87  ./ej10anexo.sh ~/
+   88  ll
+   89  cat TOT_GENERAL
+   90  ./ej10anexo.sh ~/
+   91  cat TOT_GENERAL
+   92  echo"hola"
+   93  man wc
+   94  wc -L ~/script.sh
+   95  wc -l ~/script.sh
+   96  man wc
+   97  wc -l ~/script.sh | cut d " " -f 1
+   98  wc -l ~/script.sh | cut -d " " -f 1
+   99  cd tp2
+  100  ls
+  101  sudo chmor 744 ej03.sh
+  102  sudo chmod 744 ej03.sh
+  103  ./ej03.sh
+  104  vim ~/practicas/ej10anexo.sh
+  105  shell
+  106  man chsh
+  107  grep 'admi' /etc/passwd
+  108  grep '^admi' /etc/passwd
+  109  grep '^admi' /etc/passwd | cut -d ":" -f 7
+  110  shellusuario=$(grep '^admi' /etc/passwd | cut -d ":" -f 7)/
+  111  shellusuario=$(grep '^admi' /etc/passwd | cut -d ":" -f 7)\\ngrep 'bash' $shellusuario
+  112  shellusuario=$(grep '^admi' /etc/passwd | cut -d ":" -f 7)\\ngrep 'bash' <<< $shellusuario
+  113  shellusuario=$(grep '^admi' /etc/passwd | cut -d ":" -f 7)\\necho | grep 'bash'
+  114  shellusuario=$(grep '^admi' /etc/passwd | cut -d ":" -f 7)\\necho $shellusuario | grep 'bash'
+  115  shellusuario=$(grep '^admi' /etc/passwd | cut -d ":" -f 7)\\necho "$shellusuario" | grep 'bash'
+  116  shellusuario=$(grep '^admi' /etc/passwd | cut -d ":" -f 7)\\nif [[ $shellusuario ~= "bash " ]]; then echo " Tiene bash"
+  117  shellusuario=$(grep '^admi' /etc/passwd | cut -d ":" -f 7)\\nif [[ $shellusuario ~= "bash" ]] ; then echo " Tiene bash"
+  118  shellusuario=$(grep '^admi' /etc/passwd | cut -d ":" -f 7)\\nif [ $shellusuario ~= "bash" ] ; then echo " Tiene bash"
+  119  shellusuario=$(grep '^admi' /etc/passwd | cut -d ":" -f 7)\\nif [ $shellusuario ~= "bash" ] ; them echo " Tiene bash"
+  120  shellusuario=$(grep '^admi' /etc/passwd | cut -d ":" -f 7)\\nif [ $shellusuario ~= "bash" ] ; then; echo " Tiene bash"
+  121  shellusuario=$(grep '^admi' /etc/passwd | cut -d ":" -f 7)\\n
+  122  shellusuario=$(grep '^admi' /etc/passwd | cut -d ":" -f 7)
+  123  vim ej05OTROTP.sh
+  124  sudo chmod 744 ej05OTROTP.sh
+  125  ./ej05OTROTP.sh admi
+  126  ./ej05OTROTP.sh so
+  127  vim ej05OTROTP.sh
+  128  ls
+  129  vim ej03.sh
+  130  exit
+  131  cd 
+  132  ll
+  133  la
+  134  lla
+  135  ls -la
+  136  cd practicas
+  137  ls
+  138  cd tp2
+  139  sudo chmod 744 ej01.sh
+  140  ./ej01.sh
+  141  df
+  142  df | awk '/\// {print $0}'
+  143  df | awk '/\/$/ {print $0}'
+  144  df | awk '/\/$/ {print "El espacio disponible en el sistema de archivos raiz es:",$4}'
+  145  df -h
+  146  df -h | awk '/\/$/ {print "El espacio disponible en el sistema de archivos raiz es:",$4}'
+  147  df -h | grep '\/$'
+  148  df -h | grep '\/$' | tr -s
+  149  tr --help
+  150  df -h | grep '\/$' | tr -s" "
+  151  df -h | grep '\/$' | tr -s " "
+  152  df -h | grep '\/$' | tr -s " " | cut -d " " -f 4
+  153  echo $(df -h | grep '\/$' | tr -s " " | cut -d " " -f 4)
+  154  echo "El espacio disponible en el sistema de archivos raiz es: " $(df -h | grep '\/$' | tr -s " " | cut -d " " -f 4)
+  155  echo "El espacio disponible en el sistema de archivos raiz es:" $(df -h | grep '\/$' | tr -s " " | cut -d " " -f 4)
+  156  echo "El espacio disponible en el sistema de archivos raiz es:" "$(df -h | grep '\/$' | tr -s " " | cut -d " " -f 4)"
+  157  wc -l /etc/groups
+  158  wc -l /etc/group
+  159  wc -l /etc/passwd
+  160  cd ..
+  161  vim ej10anexo.sh
+  162  cd tp
+  163  cd tp2
+  164  ls
+  165  vim ej03.sh
+  166  ./ej05OTROTP.sh
+  167  ./ej05OTROTP.sh amid
+  168  ./ej05OTROTP.sh admi
+  169  ./ej05OTROTP.sh so
+  170  cd
+  171  cd practicas
+  172  ls
+  173  cd tp2
+  174  ll
+  175  vim ej03.sh
+  176  sudo chmod 744 ej03.sh
+  177  ./ej03.sh
+  178  sudo chmod 744 ej04.sh
+  179  ./ej04.sh
+  180  ./ej04.sh a a
+  181  ls
+  182  ./ej04.sh ej01.sh ej02.sh
+  183  ./ej04.sh ej01.sh a
+  184  ./ej04.sh ej ej02.sh
+  185  vim ej03.sh
+  186  ./ej04.sh ej01.sh ej02.sh
+  187  ./ej04.sh ej02.sh ej01.sh
+  188  wc ej01.sh
+  189  wc - l ej02.sh
+  190  wc -l ej02.sh
+  191  ./ej04.sh ej02.sh ej01.sh
+  192  ./ej04.sh ej01.sh ej02.sh
+  193  ./ej04.sh ej02.sh ej01.sh
+  194  ./ej04.sh ej01.sh ej01.sh
+  195  ls
+  196  vim ej03.sh
+  197  vim ej05.sh
+  198  ls
+  199  exit
+  200  cd
+  201  cd practicas/tp2
+  202  vim ej04.sh
+  203  man find
+  204  sudo chmod 744 ej05.sh
+  205  ll
+  206  ./ej05.sh .
+  207  exit
+  208  cd
+  209  ll
+  210  mkdir find
+  211  cd find
+  212  mkdir dir
+  213  cd dir
+  214  echo "Contenido del archivo" > archivo.txt
+  215  cd ..
+  216  mkdir dir2
+  217  cd dir2
+  218  ln -s /find/dir/archivo.txt link_archivo
+  219  ll
+  220  find .
+  221  find -ls
+  222  find -H -- -ls
+  223  find -P -- -ls
+  224  cd ..
+  225  find -H dir2
+  226  find -H dir2 -name archivo.txt
+  227  find -P dir2 -name archivo.txt
+  228  find -L dir2 -name archivo.txt
+  229  ll
+  230  cd dir2
+  231  ls
+  232  ls -s /find/dir/ dir_link
+  233  ln -s /find/dir/ dir_link
+  234  ll
+  235  cd dir_link
+  236  ll
+  237  ls -R
+  238  cd dir_link/
+  239  ls
+  240  cat dir_link
+  241  cat link_archivo
+  242  ll
+  243  cd /find/dir
+  244  rm -r *
+  245  ln -s /home/so/find/dir dir_link
+  246  ln -s /home/so/find/dir/archivo.txt link_arch
+  247  ll
+  248  cd dir_link
+  249  pwd
+  250  pwd -P
+  251  cd ..
+  252  find dir2
+  253  find dir2/
+  254  find -L dir2
+  255  find -H dir2
+  256  dir -P dir2
+  257  find -P dir2
+  258  find -P dir2 -ls
+  259  find -L dir2 -ls
+  260  find -P dir2 -ls
+  261  find -L dir2 -ls
+  262  find -H dir2 -ls
+  263  ls
+  264  mkdir dir/d{1-4}
+  265  touch dir/d{1-4}/a{1=3}
+  266  find -H dir2 -ls
+  267  find -P dir2 -ls
+  268  find -L dir2 -ls
+  269  cd ..
+  270  cd find
+  271  l
+  272  ll
+  273  tree
+  274  rm -r dir/d\{1-4\}
+  275  mkdir dir/d{1,3,4,4}
+  276  echo {1,2}
+  277  echo {1-4}
+  278  echo {1_4}
+  279  echo {1-4}
+  280  echo {1..4}
+  281  tree
+  282  touch dir/d{1,3,4}/{1..4}
+  283  tree
+  284  find -P dir2
+  285  find -P dir2 -print
+  286  find -P dir2 -print0
+  287  find -P dir2 -print "Hola"
+  288  find -P dir2 -print1
+  289  find -P dir2 -print0
+  290  find -P dir2 -printf
+  291  find -P dir2 -printf "Hola"
+  292  find -P dir2 -printf "Archivo : %s \n"
+  293  find -P dir2 -printf "Archivo : %s %s \n"
+  294  find -P dir2 -printf "Archivo : %s %p \n"
+  295  find -P dir2 -printf "Archivo : %p \n"
+  296  find -P dir2 -printf "=> %p %t \n"
+  297  find -P dir2 -printf "=> %p %m \n"
+  298  find -P dir2 -printf "=> %p %a \n"
+  299  find -P dir2 -printf "=> %p %b \n"
+  300  find -P dir2 -printf "=> %p %c \n"
+  301  find -P dir2 -printf "=> %p %d \n"
+  302  find -P dir2 -printf "=> %p %e \n"
+  303  find -P dir2 -printf "=> %p %f \n"
+  304  find -P dir2 -printf "=> %f \n"
+  305  find -P dir2 -printf "=> %d \n"
+  306  find -P dir2 -printf "=> %f \n"
+  307  find -P dir2 -printf "=> %p \n"
+  308  find -P dir2 -printf "=> %g \n"
+  309  find -P dir2 -printf "=> %u \n"
+  310  find -P dir2 -printf "=> %h \n"
+  311  find -P dir2 -printf "=> %h %f \n"
+  312  find -P dir2 -printf "=> %h %f -- %p \n"
+  313  find -L dir2 -printf "=> %h %f -- %p \n"
+  314  find -L dir2 -ls 
+  315  find -L dir2 -ls -printf "==> %f"
+  316  find -L dir2 -printf "==> %f" -ls
+  317  find -L dir2 -ls -a -printf "==> %f"
+  318  find -L dir2 -ls -and -printf "==> %f"
+  319  find -L dir2 -ls -and -printf "==> %f" +
+  320  find -L dir2 -ls\; -printf "==> %f" 
+  321  find -L dir2 (-ls) -printf "==> %f" 
+  322  find -L dir2 \(-ls\) -printf "==> %f" 
+  323  find -L dir2 -- \(-ls\) -printf "==> %f" 
+  324  find -L -- dir2 \(-ls\) -printf "==> %f" 
+  325  find -L -- dir2  -printf "==> %f" 
+  326  find -P dir2
+  327  find -H dir2
+  328  find -H ./dir2 dir2/dir_link
+  329  find -P ./dir2 dir2/dir_link
+  330  find -P -D tree /dir2 dir2/dir_link
+  331  find -P -D tree -- /dir2 dir2/dir_link
+  332  find -P -D tree -- /dir2
+  333  find -P -D tree -- dir2
+  334  find -P -D stat -- dir2
+  335  find -P -D opt -- dir2
+  336  find -L -- dir2
+  337  find -L -- dir2 -d 2
+  338  find -L -- dir2 -depth 2
+  339  find -L -- dir2 -depth
+  340  find -L -- dir2
+  341  find -P -- dir2 -follow
+  342  find -P -- dir2
+  343  find /
+  344  find /ect/ 1> /dev/null
+  345  find /etc/ 1> /dev/null
+  346  find / 1> /dev/null
+  347  find /etc/ -ignore_readdir_race 1> /dev/null
+  348  find -P -- dir2
+  349  find -P -- dir2 -noleaf
+  350  /bin/find
+  351  /bin/find dir2
+  352  /bin/find
+  353  /bin/find -noleaf
+  354  find 
+  355  find . -- -name "d.*"
+  356  find -- . -name "d.*"
+  357  find -- . -regex "d.*"
+  358  find -- . -regex "*"
+  359  find -- . -name "d*"
+  360  find /etc/ 1> /dev/null
+  361  find /etc/ -nowarn 1> /dev/null
+  362  find 
+  363  find . -fls directorios
+  364  ll
+  365  cat directorios
+  366  rm directorios
+  367  echo "Contenido en un archivo" > dir/d1/2
+  368  ls -ls
+  369  ls -l
+  370  ls -lr
+  371  man ls
+  372  ls -Rl 
+  373  find . -size 24b
+  374  find . -size '24b'
+  375  find . -size '24'
+  376  find . -size 24
+  377  find . -size 24c
+  378  find . -size +24c
+  379  find . -size =24c
+  380  find . -size -24c
+  381  find . -size \-24c
+  382  find . -size +24c
+  383  find . -size 24c
+  384  find . -exec wc \;
+  385  find .
+  386  find . -exec wc {} \;
+  387  find . -exec wc {} \; 2>/dev/null
+  388  find . -exec wc -s {} \; 2>/dev/null
+  389  find . -exec wc -n {} \; 2>/dev/null
+  390  find . -exec wc -l {} \; 2>/dev/null
+  391  find . -exec 'wc -l {} ;' 2>/dev/null
+  392  find . -exec 'wc -l {} ;'
+  393  find . -exec "wc -l {} ;"
+  394  find . '-exec wc -l {} ;'
+  395  find . -exec wc -l {} ;
+  396  find . -exec wc -l {} ';'
+  397  find . -exec "wc -l {} ;"
+  398  find . -exec 'wc -l {} ;'
+  399  find . -exec wc -l \{\} ';'
+  400  find . -execdir wc -l \{\} ';'
+  401  find . -execdir ls \{\} ';'
+  402  find . -execdir ls -l \{\} ';'
+  403  find dir2 -execdir ls -l \{\} ';'
+  404  find dir2 -exec ls -l \{\} ';'
+  405  find dir2 -exec echo  \{\} ';'
+  406  find dir2 -execdir echo  \{\} ';'
+  407  find dir2 -fprint PRUEBA
+  408  ll
+  409  cat PRUEBA
+  410  find dir2 -fprint0 PRUEBA
+  411  cat PRUEBA
+  412  find dir2 -fprintf PRUEBA "%p:"
+  413  cat PRUEBA
+  414  find dir2 -ls -la
+  415  find dir2 -ls
+  416  ls -dils
+  417  ls -dil
+  418  /bin/ls -dils
+  419  cat ls
+  420  man ls
+  421  find dir2 -ok echo  \{\} ';'
+  422  find dir2 -printf "@H"
+  423  find dir2 -printf "H"
+  424  find dir2 -printf "%H"
+  425  find dir2 -printf "%AH"
+  426  find dir2 -printf "%AI"
+  427  find dir2 -printf "%Ar"
+  428  find dir2 -printf "%A+"
+  429  find dir2 -printf "%A+\n"
+  430  find dir2 -printf "%Aa\n"
+  431  find dir2 -printf "%AA\n"
+  432  find dir2 -printf "%b"
+  433  find dir2 -printf "%b/n"
+  434  find dir2 -printf "%b\n"
+  435  ls dir2 -la
+  436  find dir2 -printf "%d %b\n"
+  437  find dir2 -printf "%p %b\n"
+  438  ls -l dir2 
+  439  ls -la dir2 
+  440  find dir2 -printf "%p %G %b\n"
+  441  find dir2 -printf "%p %F %b\n"
+  442  find dir2 -printf "%p %f %b\n"
+  443  find dir2 -printf "%p %F %b\n"
+  444  find dir2 -printf "%p %g %b\n"
+  445  find dir2 -printf "%p %G %b\n"
+  446  find dir2 -printf "%p %h %b\n"
+  447  find dir2 -printf "%p %H %b\n"
+  448  find dir2 -printf "%p %i %b\n"
+  449  find dir2 -printf "%p %I %b\n"
+  450  find dir2 -printf "%p %k %b\n"
+  451  ls -la dir2
+  452  ls -lda dir2
+  453  ls -lda . dir2
+  454  ls -la . dir2
+  455  find dir2 -printf "%p %s %b\n"
+  456  find dir2 -printf "%p %S %b\n"
+  457  find dir2 -printf "%p %s %b\n"
+  458  find dir2 -printf "%p %y %b\n"
+  459  find dir2 -printf "%p %Z %b\n"
+  460  find dir2 -printf "%p %i %b\n"
+  461  find dir2 -printf "%p %y %b\n"
+  462  find dir2 -printf "%p %l %b\n"
+  463  find . -emoty -printf "%p %l %b\n"
+  464  find . -empty -printf "%p %l %b\n"
+  465  find . -executable -printf "%p %l %b\n"
+  466  find . -executable -ls
+  467  find . -perm /111 -ls
+  468  find . -perm /111 -l
+  469  find . -perm /111 -ls
+  470  echo "-name d3" > patron
+  471  find . -path ./patron
+  472  ls
+  473  ll
+  474  find d??
+  475  ls -la
+  476  find . -perm -755
+  477  find . -perm 755
+  478  find . -perm 700
+  479  find . -perm -700
+  480  find . -perm /700
+  481  mkdir perm
+  482  cd perm
+  483  touch a{1..7}
+  484  sudo chmod a1 777
+  485  sudo chamod 777 a1
+  486  sudo chmod 777 a1
+  487  ll
+  488  rm *
+  489  ll
+  490  touch a{1..25}
+  491  ll
+  492  ls -r
+  493  ls -h
+  494  ls -n
+  495  ls -lh
+  496  man ls
+  497  ls -lhN
+  498  ls -lN
+  499  ls -N
+  500  ls -h
+  501  /bin/ls -lh
+  502  /bin/ls -lhd
+  503  /bin/ls -lha
+  504  /bin/ls -lh
+  505  find .
+  506  find . -exec variable+1
+  507  variable=0
+  508  variable+=1
+  509  echo $variable
+  510  variable+=1
+  511  echo $variable
+  512  ((variable+=1))
+  513  echo $variable
+  514  ((variable+=1))
+  515  echo $variable
+  516  find . -exec ((variable+=1))\;
+  517  find . -exec ((variable+=1)) {} \;
+  518  echo $variable
+  519  find . -exec scrip ((variable+=1)) {} \;
+  520  find /ruta -type f -exec sh -c 'contador=0; for archivo; do contador=$((contador+1)); echo "Archivo $contador: $archivo"; done' {} +\n
+  521  find .  -type f -exec sh -c 'contador=0; for archivo; do contador=$((contador+1)); echo "Archivo $contador: $archivo"; done' {} +\n
+  522  find . -type f -exec bash -c 'echo $1' {} \;
+  523  find . -type f -exec bash -c 'echo $archivo' {} \;
+  524  find . -type f -exec bash -c 'echo $archivo' bash {} \;
+  525  find . -type f -exec bash -c 'contador=0; for archivo; do contador=$((contador+1)); echo "Archivo $contador: $archivo"; done' bash {} +\n
+  526  find . -type f -exec bash -c 'contador=0; for archivo; do contador=$((contador+1)); echo "Archivo $contador: $archivo"; done' {} +\n
+  527  find . -type f -exec bash -c 'contador=0; for archivo; do contador=$((contador+1)); echo "Archivo $contador: $archiv"; done' {} +\n
+  528  find . -type f -exec bash -c 'contador=0; for archivo; do contador=$((contador+1)); echo "Archivo $contador: $archiv0"; done' {} +\n
+  529  find . -type f -exec bash -c 'contador=0; for archivo; do contador=$((contador+1)); echo "Archivo $contador: $1"; done' {} +\n
+  530  find . -type f -exec bash -c 'contador=0; for archivo; do contador=$((contador+1)); echo "Archivo $contador: $archivo"; done < $@' {} +\n
+  531  find . -type f -exec bash -c 'contador=0; for archivo; do contador=$((contador+1)); echo "Archivo $contador: $archivo"; done ' {} +\n
+  532  find . -type f -exec bash -c 'perm=000; for archivo; do chmod $archivo; ((perm+=111)); done' {} +
+  533  ls -la
+  534  find . -type f -exec bash -c 'perm=000; for archivo; do chmod $perm $archivo; ((perm+=111)); done' {} +
+  535  ls -la
+  536  find . -type f -exec bash -c 'perm=0; for archivo; perm_oc=$(printf "%o" perm) do chmod $perm_oc $archivo; ((perm+=111)); done' {} +
+  537  find . -type f -exec bash -c 'perm=0; for archivo; perm_oc=$(printf \"\%o\" perm) do chmod $perm_oc $archivo; ((perm+=111)); done' {} +
+  538  find . -type f -exec bash -c 'perm=0; for archivo; do perm_oc=$(printf "%o" perm); chmod $perm_oc $archivo; ((perm+=111)); done' {} +
+  539  find . -type f -exec bash -c 'perm=0; for archivo; do perm_oc=$(printf "%o" perm);echo $perm_oc; chmod $perm_oc $archivo; ((perm+=111)); done' {} +
+  540  find . -type f -exec bash -c 'perm=0; for archivo; do perm_oc=$(printf "%o" $perm);echo $perm_oc; chmod $perm_oc $archivo; ((perm+=111)); done' {} +
+  541  find . -type f -exec bash -c 'perm=0; for archivo; do perm_oc=$(printf "%o" $perm);echo $perm_oc; chmod $perm_oc $archivo; ((perm+=1)); done' {} +
+  542  ll
+  543  printf "%o" 1
+  544  printf "%o" 10
+  545  printf "%o" 511
+  546  rm *
+  547  s
+  548  ll
+  549  rm *
+  550  ll
+  551  rm a1
+  552  ll
+  553  touch a{1..511}
+  554  ll
+  555  find . -type f -exec bash -c 'perm=0; for archivo; do perm_oc=$(printf "%o" $perm);echo $perm_oc; chmod $perm_oc $archivo; ((perm+=1)); done' {} +
+  556  printf "%o" 511
+  557  touch a{1..513}
+  558  ll
+  559  find . -type f -exec bash -c 'perm=0; for archivo; do perm_oc=$(printf "%o" $perm);echo $perm_oc; chmod $perm_oc $archivo; ((perm+=1)); done' {} +
+  560  ll
+  561  echo "find . -type f -exec bash -c 'perm=0; for archivo; do perm_oc=$(printf "%o" $perm);echo $perm_oc; chmod $perm_oc $archivo; ((perm+=1)); done' {} + " > crear_todos_los_permisos
+  562  mv crear_todos_los_permisos ../
+  563  cat ../crear_todos_los_permisos
+  564  find . -perm 777
+  565  find . -perm 775
+  566  find . -perm {0..7}{0..7}{0..7}
+  567  find . -perm "{0..7}{0..7}{0..7}"
+  568  find . -perm {0..7}{0..7}{0..7}
+  569  find . -perm '{0..7}{0..7}{0..7}'
+  570  find . -perm {0..7}00
+  571  find . -perm [0-7]00
+  572  find . -perm \[0-7\]00
+  573  find . -perm \[0\-7\]00
+  574  find . -perm -777
+  575  find . -perm -777 -ls
+  576  find . -perm -777 -exec ls -la {} \;
+  577  find . -perm -777 -exec dls -la {} \;
+  578  find . -perm -777 -exec lsd -la {} \;
+  579  find . -perm +777 -exec lsd -la {} \;
+  580  find . -perm +775 -exec lsd -la {} \;
+  581  find . -perm 775 -exec lsd -la {} \;
+  582  find . -perm -775 -exec lsd -la {} \;
+  583  find . -perm /775 -exec lsd -la {} \;
+  584  find . -perm /111 -exec lsd -la {} \;
+  585  find . -perm /001 -exec lsd -la {} \;
+  586  find . -perm /100 -exec lsd -la {} \;
+  587  find . -perm 100 -exec lsd -la {} \;
+  588  find . -perm -100 -exec lsd -la {} \;
+  589  find . -perm \-100 -exec lsd -la {} \;
+  590  find . -perm /000 -exec lsd -la {} \;
+  591  find . -perm /000 -ls
+  592  find . -perm /100 -ls
+  593  find . -perm /100 -exec lsd -la {} \;
+  594  find . -perm /100 -exec lsd -la {} \; > procesar
+  595  vim procesar
+  596  find . -perm -100 -exec lsd -la {} \; > procesar
+  597  vim procesar
+  598  find . -perm -100 -name "procesar" -exec lsd -la {} \; > procesar
+  599  find . -perm -100 -name "procesar" -exec lsd -la {} \;
+  600  ls -la
+  601  find . -perm -100 -name "a99" -exec lsd -la {} \;
+  602  find . -perm -100 -name "a94" -exec lsd -la {} \;
+  603  find . -perm -111 -name "a94" -exec lsd -la {} \;
+  604  find . -perm -121 -name "a94" -exec lsd -la {} \;
+  605  find . -perm /121 -name "a94" -exec lsd -la {} \;
+  606  find . -type f -perm /111 -exec lsd -la {} \; > archivos_con_ejecucion
+  607  grep 'x' archivos_con_ejecucion
+  608  grep \! 'x' archivos_con_ejecucion
+  609  grep -not 'x' archivos_con_ejecucion
+  610  man grep
+  611  grep -v 'x' archivos_con_ejecucion
+  612  vim archivos_con_ejecucion
+  613  find . -type f -perm /400 -exec lsd -la {} \; > lectura_usuario
+  614  grep -v 'r' lectura_usuario
+  615  grep 'r' lectura_usuario
+  616  find . -type f -perm -400 -exec lsd -la {} \; > lectura_menos
+  617  grep 'r' lectura_menos
+  618  code .
+  619  diff lectura_usuario lectura_menos
+  620  man diff
+  621  ll
+  622  find . -type f -perm -440 -exec lsd -la {} \; > lectura_menos_usuario_grupo
+  623  find . -type f -perm /440 -exec lsd -la {} \; > lectura_barra_usuario_grupo
+  624  diff lectura_barra_usuario_grupo lectura_menos_usuario_grupo
+  625  diff lectura_menos_usuario_grupo lectura_barra_usuario_grupo
+  626  diff lectura_menos_usuario_grupo lectura_barra_usuario_grupo | grep "r"
+  627  grep 'r*r' lectura_barra_usuario_grupo
+  628  grep 'r*r' lectura_menos_usuario_grupo
+  629  ls
+  630  history

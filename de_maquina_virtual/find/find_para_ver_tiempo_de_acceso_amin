@@ -1,0 +1,2 @@
+find . -amin -10 -name "*.txt" -exec bash -c 'stat {} | grep -e "Fichero" -e "Acceso"' \;
+
