@@ -1,0 +1,184 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.1  0.0   2496  1676 ?        Ss   17:38   0:02 init [3]
+root         2  0.0  0.0      0     0 ?        S    17:38   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        I<   17:38   0:00 [rcu_gp]
+root         4  0.0  0.0      0     0 ?        I<   17:38   0:00 [rcu_par_gp]
+root         6  0.0  0.0      0     0 ?        I<   17:38   0:00 [kworker/0:0H-events_highpri]
+root         8  0.0  0.0      0     0 ?        I<   17:38   0:00 [mm_percpu_wq]
+root         9  0.0  0.0      0     0 ?        S    17:38   0:00 [rcu_tasks_kthre]
+root        10  0.0  0.0      0     0 ?        S    17:38   0:00 [rcu_tasks_rude_]
+root        11  0.0  0.0      0     0 ?        S    17:38   0:00 [rcu_tasks_trace]
+root        12  0.0  0.0      0     0 ?        S    17:38   0:00 [ksoftirqd/0]
+root        13  0.1  0.0      0     0 ?        I    17:38   0:02 [rcu_preempt]
+root        14  0.0  0.0      0     0 ?        S    17:38   0:00 [rcub/0]
+root        15  0.0  0.0      0     0 ?        S    17:38   0:00 [rcuc/0]
+root        16  0.0  0.0      0     0 ?        S    17:38   0:00 [migration/0]
+root        17  0.0  0.0      0     0 ?        S    17:38   0:00 [cpuhp/0]
+root        18  0.0  0.0      0     0 ?        S    17:38   0:00 [cpuhp/1]
+root        19  0.0  0.0      0     0 ?        S    17:38   0:00 [migration/1]
+root        20  0.0  0.0      0     0 ?        S    17:38   0:00 [rcuc/1]
+root        21  0.0  0.0      0     0 ?        S    17:38   0:00 [ksoftirqd/1]
+root        23  0.0  0.0      0     0 ?        I<   17:38   0:00 [kworker/1:0H-kblockd]
+root        24  0.0  0.0      0     0 ?        S    17:38   0:00 [cpuhp/2]
+root        25  0.0  0.0      0     0 ?        S    17:38   0:00 [migration/2]
+root        26  0.0  0.0      0     0 ?        S    17:38   0:00 [rcuc/2]
+root        27  0.0  0.0      0     0 ?        S    17:38   0:00 [ksoftirqd/2]
+root        29  0.0  0.0      0     0 ?        I<   17:38   0:00 [kworker/2:0H-events_highpri]
+root        30  0.0  0.0      0     0 ?        S    17:38   0:00 [kdevtmpfs]
+root        31  0.0  0.0      0     0 ?        I<   17:38   0:00 [netns]
+root        32  0.0  0.0      0     0 ?        S    17:38   0:00 [kauditd]
+root        33  0.0  0.0      0     0 ?        I    17:38   0:00 [kworker/0:1-events]
+root        34  0.0  0.0      0     0 ?        I    17:38   0:00 [kworker/1:1-events]
+root        35  0.0  0.0      0     0 ?        S    17:38   0:00 [oom_reaper]
+root        36  0.0  0.0      0     0 ?        I<   17:38   0:00 [writeback]
+root        37  0.0  0.0      0     0 ?        S    17:38   0:00 [kcompactd0]
+root        38  0.0  0.0      0     0 ?        SN   17:38   0:00 [ksmd]
+root        39  0.0  0.0      0     0 ?        SN   17:38   0:00 [khugepaged]
+root        93  0.0  0.0      0     0 ?        I<   17:38   0:00 [kintegrityd]
+root        94  0.0  0.0      0     0 ?        I<   17:38   0:00 [kblockd]
+root        95  0.0  0.0      0     0 ?        I<   17:38   0:00 [blkcg_punt_bio]
+root        96  0.0  0.0      0     0 ?        I<   17:38   0:00 [tpm_dev_wq]
+root        97  0.0  0.0      0     0 ?        I<   17:38   0:00 [tifm]
+root        98  0.0  0.0      0     0 ?        I<   17:38   0:00 [ata_sff]
+root        99  0.0  0.0      0     0 ?        I<   17:38   0:00 [edac-poller]
+root       100  0.0  0.0      0     0 ?        I<   17:38   0:00 [devfreq_wq]
+root       101  0.0  0.0      0     0 ?        S    17:38   0:00 [watchdogd]
+root       103  0.0  0.0      0     0 ?        I<   17:38   0:00 [kworker/0:1H-kblockd]
+root       105  0.0  0.0      0     0 ?        S    17:38   0:00 [kswapd0]
+root       107  0.0  0.0      0     0 ?        I<   17:38   0:00 [kthrotld]
+root       108  0.0  0.0      0     0 ?        I<   17:38   0:00 [nvme-wq]
+root       109  0.0  0.0      0     0 ?        I<   17:38   0:00 [nvme-reset-wq]
+root       110  0.0  0.0      0     0 ?        I<   17:38   0:00 [nvme-delete-wq]
+root       111  0.0  0.0      0     0 ?        S    17:38   0:00 [scsi_eh_0]
+root       112  0.0  0.0      0     0 ?        I<   17:38   0:00 [scsi_tmf_0]
+root       113  0.0  0.0      0     0 ?        S    17:38   0:00 [scsi_eh_1]
+root       114  0.0  0.0      0     0 ?        I<   17:38   0:00 [scsi_tmf_1]
+root       117  0.0  0.0      0     0 ?        I<   17:38   0:00 [kworker/1:1H-kblockd]
+root       118  0.0  0.0      0     0 ?        I<   17:38   0:00 [kvub300c]
+root       119  0.0  0.0      0     0 ?        I<   17:38   0:00 [kvub300p]
+root       120  0.0  0.0      0     0 ?        I<   17:38   0:00 [kvub300d]
+root       121  0.0  0.0      0     0 ?        I<   17:38   0:00 [kmemstick]
+root       122  0.0  0.0      0     0 ?        I<   17:38   0:01 [kworker/2:1H-kblockd]
+root       123  0.0  0.0      0     0 ?        I<   17:38   0:00 [ipv6_addrconf]
+root       132  0.0  0.0      0     0 ?        I<   17:38   0:00 [kstrp]
+root       133  0.0  0.0      0     0 ?        I<   17:38   0:00 [zswap-shrink]
+root       134  0.0  0.0      0     0 ?        I<   17:38   0:00 [kworker/u7:0]
+root       176  0.0  0.0      0     0 ?        I    17:38   0:00 [kworker/0:2-events]
+root       180  0.0  0.0      0     0 ?        I    17:38   0:00 [kworker/1:2-mm_percpu_wq]
+root       203  0.0  0.0      0     0 ?        S    17:38   0:00 [jbd2/sda1-8]
+root       204  0.0  0.0      0     0 ?        I<   17:38   0:00 [ext4-rsv-conver]
+root       399  0.0  0.0  22980  3552 ?        Ss   17:39   0:00 /sbin/udevd --daemon
+root       426  0.0  0.0      0     0 ?        I<   17:39   0:00 [iprt-VBoxWQueue]
+root       431  0.0  0.0      0     0 ?        I    17:39   0:00 [kworker/2:2-events]
+root       433  0.0  0.0      0     0 ?        I<   17:39   0:00 [cryptd]
+root       461  0.0  0.0      0     0 ?        I    17:39   0:00 [kworker/2:3-events]
+root       477  0.0  0.0      0     0 ?        I<   17:39   0:00 [ttm_swap]
+root      1035  0.0  0.0   6412  4420 ?        Ss   17:39   0:00 /usr/sbin/apache2 -k start
+www-data  1038  0.0  0.0   6444  3208 ?        S    17:39   0:00 /usr/sbin/apache2 -k start
+www-data  1039  0.0  0.0   6444  3208 ?        S    17:39   0:00 /usr/sbin/apache2 -k start
+www-data  1040  0.0  0.0   6444  3208 ?        S    17:39   0:00 /usr/sbin/apache2 -k start
+www-data  1041  0.0  0.0   6444  3208 ?        S    17:39   0:00 /usr/sbin/apache2 -k start
+www-data  1042  0.0  0.0   6444  3208 ?        S    17:39   0:00 /usr/sbin/apache2 -k start
+daemon    1052  0.0  0.0   3580   168 ?        Ss   17:39   0:00 /usr/sbin/atd
+root      1053  0.0  0.0  13120  2380 ?        S<sl 17:39   0:00 /sbin/auditd
+root      1127  0.0  0.0   2524   108 ?        Ss   17:39   0:00 /usr/sbin/uuidd
+ntpsec    1159  0.0  0.3  84580 19012 ?        SLs  17:39   0:00 /usr/sbin/ntpd -p /run/ntpd.pid -c /etc/ntpsec/ntp.conf -g -N -u ntp
+root      1202  0.0  0.0   9148  2116 ?        Ss   17:39   0:00 /usr/sbin/cron
+message+  1384  0.0  0.0   4792  2488 ?        Ss   17:39   0:00 /usr/bin/dbus-daemon --system
+memcache  1432  0.0  0.0 411356  4344 ?        Sl   17:39   0:00 /usr/bin/memcached -m 64 -p 11211 -u memcache -l 127.0.0.1 -P /var/r
+root      1480  0.0  0.1   9704  5540 ?        S    17:39   0:00 /usr/sbin/bluetoothd
+Debian-+  1483  0.0  0.3  27928 15772 ?        Ss   17:39   0:00 /usr/sbin/exim4 -bd -q30m
+root      1488  0.0  0.0   5732  2328 ?        Ss   17:39   0:00 /usr/sbin/dundee
+root      1490  0.0  0.0  13596  3900 ?        Ss   17:39   0:00 /usr/sbin/connmand
+root      1502  0.0  0.0  13512  3448 ?        S    17:39   0:00 elogind-daemon
+root      1506  0.0  0.0   7692  3168 ?        Ss   17:39   0:00 /usr/sbin/lxdm-binary -d
+avahi     1508  0.0  0.0   3656  2324 ?        S    17:39   0:00 avahi-daemon: running [locos-cosmo.local]
+avahi     1509  0.0  0.0   3480   188 ?        S    17:39   0:00 avahi-daemon: chroot helper
+root      1513  0.0  0.0   8156  4096 ?        Ss   17:39   0:00 /usr/sbin/ofonod
+root      1551  2.0  2.3 811260 114736 tty7    Ssl+ 17:39   0:46 /usr/lib/xorg/Xorg :0 vt07 -nolisten tcp -novtswitch -auth /var/run/
+root      1564  0.0  0.0   2576  1728 ?        S    17:39   0:00 /bin/sh /usr/bin/mysqld_safe
+root      1602  0.0  0.1  13056  5208 ?        S    17:39   0:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+mysql     1729  0.0  2.1 1274012 102976 ?      Sl   17:39   0:01 /usr/sbin/mariadbd --basedir=/usr --datadir=/var/lib/mysql --plugin-
+root      1730  0.0  0.0   2500  1072 ?        S    17:39   0:00 logger -t mysqld -p daemon error
+root      1952  0.0  0.0 352008  2072 ?        Sl   17:39   0:00 /usr/sbin/VBoxService --pidfile /var/run/vboxadd-service.sh
+rabbitmq  2023  0.0  0.0   4144  1588 ?        S    17:39   0:00 /usr/lib/erlang/erts-13.1.5/bin/epmd -daemon
+rabbitmq  2067  0.0  0.0   2576   952 ?        S    17:39   0:00 /bin/sh /usr/sbin/rabbitmq-server
+rabbitmq  2075  0.0  0.0   2576  1680 ?        S    17:39   0:00 /bin/sh /usr/lib/rabbitmq/bin/rabbitmq-server
+rabbitmq  2085  1.3  2.5 2497632 124824 ?      Sl   17:39   0:29 /usr/lib/erlang/erts-13.1.5/bin/beam.smp -W w -MBas ageffcbf -MHas a
+rabbitmq  2106  0.0  0.0   2464  1424 ?        Ss   17:39   0:00 erl_child_setup 1024
+rabbitmq  2195  0.0  0.0   3392  1204 ?        Ss   17:39   0:00 /usr/lib/erlang/erts-13.1.5/bin/inet_gethost 4
+rabbitmq  2196  0.0  0.0   3392   112 ?        S    17:39   0:00 /usr/lib/erlang/erts-13.1.5/bin/inet_gethost 4
+rabbitmq  2248  0.0  0.0   2576  1704 ?        Ss   17:39   0:00 /bin/sh -s rabbit_disk_monitor
+root      2255  0.0  0.0   8412  1036 tty1     Ss+  17:39   0:00 /sbin/getty --noclear 38400 tty1
+root      2256  0.0  0.0   8412  1068 tty2     Ss+  17:39   0:00 /sbin/getty 38400 tty2
+root      2257  0.0  0.0   8412  1036 tty3     Ss+  17:39   0:00 /sbin/getty 38400 tty3
+root      2258  0.0  0.0   8412  1068 tty4     Ss+  17:39   0:00 /sbin/getty 38400 tty4
+root      2259  0.0  0.0   8412  1040 tty5     Ss+  17:39   0:00 /sbin/getty 38400 tty5
+root      2260  0.0  0.0   8412  1036 tty6     Ss+  17:39   0:00 /sbin/getty 38400 tty6
+root      2308  0.0  0.0   7012  3796 ?        S    17:41   0:00 /usr/lib/lxdm/lxdm-session
+cosmo     2346  0.0  0.1 241120  7540 ?        Sl   17:41   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+cosmo     2349  0.0  0.2 253636 14220 ?        Ssl  17:41   0:00 /usr/bin/lxsession -s LXDE -e LXDE
+cosmo     2367  0.0  0.0   6644  1932 ?        S    17:41   0:00 dbus-launch --autolaunch d924581540f94fe5219a463164fd281f --binary-s
+cosmo     2368  0.0  0.0   4316   244 ?        Ss   17:41   0:00 /usr/bin/dbus-daemon --syslog-only --fork --print-pid 5 --print-addr
+cosmo     2388  0.0  0.0   6648  1784 ?        S    17:41   0:00 /usr/bin/dbus-launch --exit-with-session --sh-syntax
+cosmo     2389  0.0  0.0   4700  2232 ?        Ss   17:41   0:00 /usr/bin/dbus-daemon --syslog --fork --print-pid 5 --print-address 7
+cosmo     2405  0.0  0.0  21712   348 ?        S    17:41   0:00 /usr/bin/VBoxClient --clipboard
+cosmo     2406  0.0  0.0 219900  3932 ?        Sl   17:41   0:00 /usr/bin/VBoxClient --clipboard
+cosmo     2420  0.0  0.0  21712   352 ?        S    17:41   0:00 /usr/bin/VBoxClient --seamless
+cosmo     2421  0.1  0.0 220000  2312 ?        Sl   17:41   0:03 /usr/bin/VBoxClient --seamless
+cosmo     2428  0.0  0.0  21712   352 ?        S    17:41   0:00 /usr/bin/VBoxClient --draganddrop
+cosmo     2429  0.2  0.0 220516  2380 ?        Sl   17:41   0:04 /usr/bin/VBoxClient --draganddrop
+cosmo     2441  0.0  0.0   7660   772 ?        Ss   17:41   0:00 /usr/bin/ssh-agent startlxde
+cosmo     2449  0.0  0.1 240388  8108 ?        Sl   17:41   0:00 /usr/libexec/gvfsd
+cosmo     2458  0.0  0.6 256096 33340 ?        S    17:41   0:02 openbox --config-file /home/cosmo/.config/openbox/lxde-rc.xml
+cosmo     2460  0.2  0.0   6624  3016 ?        S    17:41   0:05 xscreensaver -no-splash
+cosmo     2463  0.0  0.2 179576 11796 ?        Sl   17:41   0:00 lxpolkit
+cosmo     2464  0.1  1.4 923268 68244 ?        Sl   17:41   0:03 lxpanel --profile LXDE
+cosmo     2465  0.0  1.3 561920 66136 ?        Sl   17:41   0:01 pcmanfm --desktop --profile LXDE
+cosmo     2466  0.0  2.2 747492 106876 ?       Sl   17:41   0:00 connman-gtk --tray
+cosmo     2471  0.0  0.0   6924  3372 ?        S    17:41   0:00 xscreensaver-systemd
+polkitd   2473  0.0  0.1 306312  8256 ?        Sl   17:41   0:00 /usr/lib/polkit-1/polkitd --no-debug
+cosmo     2476  0.0  0.0   7660   776 ?        Ss   17:41   0:00 /usr/bin/ssh-agent -s
+cosmo     2526  0.0  0.1 307764  6548 ?        Sl   17:41   0:00 /usr/libexec/at-spi-bus-launcher --launch-immediately
+cosmo     2537  0.0  0.0  21712   348 ?        S    17:41   0:00 /usr/bin/VBoxClient --vmsvga
+cosmo     2538  0.0  0.0 220104  3476 ?        Sl   17:41   0:00 /usr/bin/VBoxClient --vmsvga
+cosmo     2547  0.0  0.1 236576  5068 ?        Sl   17:41   0:00 /usr/libexec/geoclue-2.0/demos/agent
+cosmo     2576  0.0  0.0   4316  2968 ?        S    17:41   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/acces
+cosmo     2585  0.0  0.6 733852 32008 ?        Sl   17:41   0:01 /usr/bin/pulseaudio --start --log-target=syslog
+cosmo     2587  0.0  0.2 353348 12188 ?        Sl   17:41   0:00 /usr/libexec/gvfs-udisks2-volume-monitor
+cosmo     2591  0.0  0.1 156884  5680 ?        Sl   17:41   0:00 /usr/lib/menu-cache/menu-cached /run/user/1003/menu-cached-:0
+root      2598  0.0  0.2 393508 13036 ?        Sl   17:41   0:00 /usr/libexec/udisks2/udisksd
+cosmo     2603  0.0  0.2 390168 11464 ?        Sl   17:41   0:00 /usr/libexec/xdg-desktop-portal
+cosmo     2611  0.0  0.1 460456  6968 ?        Sl   17:41   0:00 /usr/libexec/xdg-document-portal
+cosmo     2615  0.0  0.1 236664  5256 ?        Sl   17:41   0:00 /usr/libexec/xdg-permission-store
+root      2622  0.0  0.0   2480  1004 ?        Ss   17:41   0:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=po
+cosmo     2627  0.0  0.4 372796 21280 ?        Sl   17:41   0:00 /usr/libexec/xdg-desktop-portal-gtk
+cosmo     2636  0.0  0.1 160928  7188 ?        Sl   17:41   0:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+cosmo     2643  0.0  0.1 315144  8156 ?        Sl   17:41   0:00 /usr/libexec/gvfs-afc-volume-monitor
+cosmo     2651  0.0  0.1 236048  6476 ?        Sl   17:41   0:00 /usr/libexec/gvfs-mtp-volume-monitor
+cosmo     2656  0.0  0.1 236252  6588 ?        Sl   17:41   0:00 /usr/libexec/gvfs-goa-volume-monitor
+cosmo     2661  0.0  0.1 237000  6888 ?        Sl   17:41   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+cosmo     2663  0.0  0.1 241088  8080 ?        Sl   17:41   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secr
+cosmo     2681  0.0  0.1 314364  8300 ?        Sl   17:41   0:00 /usr/libexec/gvfsd-trash --spawner :1.3 /org/gtk/gvfs/exec_spaw/0
+cosmo     2706  0.0  1.1 492380 54736 ?        Sl   17:41   0:01 lxterminal
+cosmo     2713  0.0  0.1  10928  5236 pts/0    Ss+  17:41   0:00 bash
+root      3913  0.0  0.0      0     0 ?        I    17:48   0:00 [kworker/u6:1-events_unbound]
+cosmo     4343  3.8  3.4 1177603828 166140 ?   SLsl 17:52   0:55 /usr/share/code/code .
+cosmo     4346  0.0  0.9 33768512 45880 ?      S    17:52   0:00 /usr/share/code/code --type=zygote --no-zygote-sandbox
+cosmo     4347  0.0  0.9 33768500 43656 ?      S    17:52   0:00 /usr/share/code/code --type=zygote
+cosmo     4349  0.0  0.2 33768524 11628 ?      S    17:52   0:00 /usr/share/code/code --type=zygote
+cosmo     4363  0.0  0.0 33575532 3072 ?       Sl   17:52   0:00 /usr/share/code/chrome_crashpad_handler --monitor-self-annotation=pt
+cosmo     4378  6.2  2.9 34118184 143212 ?     Sl   17:52   1:30 /usr/share/code/code --type=gpu-process --crashpad-handler-pid=4363 
+cosmo     4385  0.2  1.3 33818228 64340 ?      Sl   17:52   0:03 /usr/share/code/code --type=utility --utility-sub-type=network.mojom
+cosmo     4408 20.5  5.7 1187889348 280088 ?   Rl   17:52   4:56 /usr/share/code/code --type=renderer --crashpad-handler-pid=4363 --e
+cosmo     4430  1.1  1.9 1177355964 94240 ?    Sl   17:52   0:16 /usr/share/code/code --type=utility --utility-sub-type=node.mojom.No
+cosmo     4447  0.9  1.8 1177364732 88892 ?    Sl   17:52   0:14 /usr/share/code/code --type=utility --utility-sub-type=node.mojom.No
+cosmo     4458  2.4  2.8 1177356556 137008 ?   Sl   17:52   0:35 /usr/share/code/code --type=utility --utility-sub-type=node.mojom.No
+cosmo     4474  0.1  1.6 1177372920 79600 ?    Sl   17:52   0:01 /usr/share/code/code --type=utility --utility-sub-type=node.mojom.No
+cosmo     4498  0.0  0.1  11112  5292 pts/1    Ss   17:52   0:00 /usr/bin/bash --init-file /usr/share/code/resources/app/out/vs/workb
+cosmo     4528  0.4  1.8 1177312692 88592 ?    Sl   17:52   0:06 /usr/share/code/code --ms-enable-electron-run-as-node /home/cosmo/.v
+cosmo     4826  0.0  1.3 1177278660 66984 ?    Sl   17:54   0:00 /usr/share/code/code --ms-enable-electron-run-as-node /usr/share/cod
+root      5921  0.0  0.0      0     0 ?        I    18:01   0:00 [kworker/u6:2-events_unbound]
+cosmo     7619  0.0  0.0   9472  3304 pts/1    S+   18:16   0:00 /bin/bash ./03_tp4.sh
+cosmo     7620  0.0  0.0  10352  3980 pts/1    R+   18:16   0:00 ps aux
+cosmo     7621  0.0  0.0   2576   912 ?        S    18:16   0:00 /bin/sh -c /usr/bin/ps -ax -o pid=,ppid=,pcpu=,pmem=,command=
