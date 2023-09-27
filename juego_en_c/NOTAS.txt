@@ -1,0 +1,4 @@
+# Juego en C
+
+Tutorial de youtube de como hacer un juego para terminal en C.
+
