@@ -2,3 +2,15 @@
 
 Tutorial de youtube de como hacer un juego para terminal en C.
 
+Stages
+Stage 1
+- Non-canonical input mode
+- Turning off echo
+- Proper reset on exit (both for normal exit and abnormal exit)
+- Rudimentary game loop
+- Grab the arrow keys
+- Print them out (e.g RIGHT)
+
+Stage 2
+- Empty level with borders
+- Player can walk around within the borders
