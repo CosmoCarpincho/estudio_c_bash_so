@@ -34,6 +34,8 @@ void configure_terminal() {
 
 static int exit_loop;
 
+// Esto lo modifica y por eso pone el attribute unused. Ya que el printf no se
+// debe usar en manejadores de señales
 void signal_handler(__attribute__((unused)) int signum) { exit_loop = 1; }
 
 int read_key(char *buf, int k) {
@@ -81,7 +83,7 @@ void print_key(int key) {
 int main() {
         configure_terminal();
 
-        signal(SIGINT, signal_handler);
+        signal(SIGINT, signal_handler); // Si hay error devuelve codigo de error
 
         struct timespec req = {};
         struct timespec rem = {};

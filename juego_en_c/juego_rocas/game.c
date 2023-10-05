@@ -6,6 +6,9 @@
 #include <time.h>
 #include <unistd.h>
 
+// Extras
+#include <sys/stat.h>
+
 static struct termios old_termios, new_termios;
 
 void reset_terminal() {
@@ -67,6 +70,14 @@ int read_input() {
         return final_key;
 }
 
+void extra1() {
+
+        struct stat info;
+        fstat(STDIN_FILENO, &info);
+        printf("Tam: %ld\n", (long)info.st_size);
+        printf("Tam: %ld\n", (long)info.st_blksize);
+}
+
 void print_key(int key) {
         if (key == 1)
                 printf("Up\n");
@@ -79,6 +90,8 @@ void print_key(int key) {
 }
 
 int main() {
+
+        extra1();
         configure_terminal();
 
         signal(SIGINT, signal_handler);
