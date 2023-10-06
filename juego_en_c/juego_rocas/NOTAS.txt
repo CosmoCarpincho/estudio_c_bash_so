@@ -18,3 +18,54 @@ Stage 1
 Stage 2
 - Empty level with borders
 - Player can walk around within the borders
+
+
+Stage 3
+- Empty level with borders
+- Player can walk around within the borders
+
+Stage 4
+- Load up level from a file
+
+Stage 5
+- Gameplay
+
+Game Elements:
+@ - Player Character
+X - Wall
+$ - Gems/Gold
+O - Rock
+. - Earth
+  - Space/Empty
+E - Exit
+
+Rules:
+- Player can dig a tunnel through Earth
+- Rocks/Gems fall down if there is space below them
+- Rocks/Gems falling on Player ends the game -> Lose Scenario
+- Player entering Exit eds the game -> Win scenario
+- Player can´t go though Wall, Rock
+- Player can collect Gems
+
+Composite Rules:
+This is stable
+.O.
+.O.
+This is unstable -> Top rock rolls to the left
+. O..  
+. O..  
+This is unstable -> Top rock rolls to the right  
+..O .  
+..O .
+However, this is stable  
+.O ...  
+XX XXX  
+
+Rocks and Gems behave similarly in most of the time.  
+For example, a Gem can kill the plater if it falls on its head.  
+
+Player can push a rock horizontally if there is empty Space behind the Rock.  
+In the scenario below, the Player can push the rocks right or left.
+.. O@O ..
+.........
+
