@@ -7,6 +7,7 @@
 #include <unistd.h>
 
 // Extras
+#include <fcntl.h>
 #include <sys/stat.h>
 
 // Revisar sintaxis. ¿Porque tantos paréntesis?
@@ -232,7 +233,6 @@ void handle_rocks_gems(GameState *state, int x, int i) {
                 }
         }
 }
-// QUEDE EN 23:00
 void update_all_elements(GameState *state) {
         // We iterate over the screen from bottom to top from right to left
         for (int j = MAX_Y; j != 0; j--) {
