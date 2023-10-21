@@ -28,7 +28,7 @@ void configure_terminal() {
         tcsetattr(STDIN_FILENO, TCSANOW, &new_termios);
 
         printf("\e[?25l");      // hide cursor
-        atexit(reset_terminal); // esta funcion se llama cuando se salga del
+        atexit(reset_terminal); // esta función se llama cuando se salga del
                                 // programa.
 }
 
@@ -83,7 +83,7 @@ void print_key(int key) {
 int main() {
         configure_terminal();
 
-        signal(SIGINT, signal_handler); // Si hay error devuelve codigo de error
+        signal(SIGINT, signal_handler); // Si hay error devuelve código de error
 
         struct timespec req = {};
         struct timespec rem = {};
