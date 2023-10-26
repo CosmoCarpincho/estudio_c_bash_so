@@ -1,26 +1,36 @@
 #include <stdio.h>
 #include <stdlib.h>   // exit
 #include <sys/stat.h> //mkdir
+#include <time.h>     // para semilla de aletoriedad
 #include <unistd.h>   //F_Ok
 
-void crear_vector(__attribute__((unused)) unsigned int cant_elem) {
+void crear_vector(unsigned int cant_elem) {
 
-        int aux = access("data", F_OK);
+        int aux = access("data", F_OK); // Podría usar stat en vez de access
         if (aux == -1) {
+                // mkdir solo crea un directorio. (no los padres) OJO
                 if (mkdir("data", 0777) != 0) {
                         perror("Error al crear la carpeta");
                         exit(EXIT_FAILURE);
                 }
         }
 
-        FILE *vector = fopen("./data/vector.data", "a");
+        FILE *archivo = fopen("./data/vector.data", "a");
 
-        if (!vector) {
+        if (!archivo) {
                 printf("Error en el archivo vector.data");
                 exit(EXIT_FAILURE);
         }
 
-        fclose(vector);
+        srand(time(NULL)); // Semilla pseudo aleatoria basada en el tiempo actual
+
+        for (unsigned int i = 0; i < cant_elem; i++) {
+                fprintf(archivo, "%d ", rand() % 1000); // Carga de números aleatorios
+        }
+
+        fprintf(archivo, "\n");
+
+        fclose(archivo);
 }
 
 void menu() {
