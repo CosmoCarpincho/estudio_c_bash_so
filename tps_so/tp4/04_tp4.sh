@@ -4,19 +4,17 @@
 # y en caso de que el usuario pasado como argumento sea root, mostrar un mensaje de error
 
 usuario=$1
-if [ $# -eq 0 ] ;then
-  ps aux
-elif [[ $# -eq 1 && $1 =~ [Rr][Oo][Oo][Tt] ]]; then  
-  echo "ERROR: no se permite usuario root"
-  exit 1
+if [ $# -eq 0 ]; then
+	ps aux
+elif [[ $# -eq 1 && $1 =~ [Rr][Oo][Oo][Tt] ]]; then
+	echo "ERROR: no se permite usuario root"
+	exit 1
 elif [ $# -eq 1 ]; then
-  ps -fu $usuario 2>/dev/null || echo "El usuario [$usuario] no existe"
+	ps -fu $usuario 2>/dev/null || echo "El usuario [$usuario] no existe"
 else
-  echo "Ingrese un usuario como argumento o ninguno para ver todos los procesos"
-  exit 1
+	echo "Ingrese un usuario como argumento o ninguno para ver todos los procesos"
+	exit 1
 fi
-
-
 
 # ps -fu $usuario 2> /dev/null # Si el usuario no existe elimino el error y agrego comentario abajo
 
@@ -25,3 +23,4 @@ fi
 # fi
 
 # ps -fu $usuario 2> /dev/null || echo "El usuario [$usuario] no existe" # forma corta
+

@@ -1,0 +1,4 @@
+Pasado un directorio por parametro copiar
+todos ios archivos con ext .sh de dicho directorio a BackupDir.
+El script se tiene que ejecutar todos los 
+lunes a las 19:50hs cada 2 meses
