@@ -1,0 +1,15 @@
+avahi   
+cosmo   
+message+
+ntpsec  
+polkitd 
+root    
+UID     
+El fd es 1: 
+avahi   
+cosmo   
+message+
+ntpsec  
+polkitd 
+root    
+UID     
