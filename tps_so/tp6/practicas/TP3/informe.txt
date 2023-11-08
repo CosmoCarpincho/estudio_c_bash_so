@@ -1,0 +1,33 @@
+Modificados ultimos 30 dias
+
+./informe.txt
+./ej06.sh
+
+Accedidos en los ultimos 60 minutos
+
+./informe.txt
+./ej05.sh
+./ej06.sh
+
+Modificados en los ultimos 5 dias
+
+./extend
+./informe.txt
+./name
+./ej03.sh
+./ej02.sh
+./perm644
+./var-set
+./ej05.sh
+./ej05.sh.save
+./tam
+./ej04.sh
+./ej01.sh
+./pruebas/p2.sh
+./pruebas/archivo
+./pruebas/p.txt
+./perm
+./ej06.sh
+
+modificados hace mas de 10 dias
+

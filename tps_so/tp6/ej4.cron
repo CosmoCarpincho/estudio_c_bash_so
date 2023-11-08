@@ -1,0 +1,3 @@
+
+# min horas dias(mes) mes dias(semana)
+  2 * * * * touch ~/cron_pruebas/archi_$(date +%H:%M).txt
