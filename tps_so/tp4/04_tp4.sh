@@ -6,11 +6,11 @@
 usuario=$1
 if [ $# -eq 0 ]; then
 	ps aux
-elif [[ $# -eq 1 && $1 =~ [Rr][Oo][Oo][Tt] ]]; then
+elif [[ $# -eq 1 && $usuario =~ [Rr][Oo][Oo][Tt] ]]; then
 	echo "ERROR: no se permite usuario root"
 	exit 1
 elif [ $# -eq 1 ]; then
-	ps -fu $usuario 2>/dev/null || echo "El usuario [$usuario] no existe"
+	ps -fu $usuario 2>/dev/null || echo "El usuario [$usuario] no existe o no esta ejecutando procesos"
 else
 	echo "Ingrese un usuario como argumento o ninguno para ver todos los procesos"
 	exit 1
@@ -23,4 +23,3 @@ fi
 # fi
 
 # ps -fu $usuario 2> /dev/null || echo "El usuario [$usuario] no existe" # forma corta
-
