@@ -1,0 +1,175 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0   2496  1684 ?        Ss   08:11   0:03 init [3]
+root         2  0.0  0.0      0     0 ?        S    08:11   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        I<   08:11   0:00 [rcu_gp]
+root         4  0.0  0.0      0     0 ?        I<   08:11   0:00 [rcu_par_gp]
+root         6  0.0  0.0      0     0 ?        I<   08:11   0:00 [kworker/0:0H-kblockd]
+root         8  0.0  0.0      0     0 ?        I<   08:11   0:00 [mm_percpu_wq]
+root         9  0.0  0.0      0     0 ?        S    08:11   0:00 [rcu_tasks_kthre]
+root        10  0.0  0.0      0     0 ?        S    08:11   0:00 [rcu_tasks_rude_]
+root        11  0.0  0.0      0     0 ?        S    08:11   0:00 [rcu_tasks_trace]
+root        12  0.0  0.0      0     0 ?        S    08:11   0:00 [ksoftirqd/0]
+root        13  0.0  0.0      0     0 ?        R    08:11   0:14 [rcu_preempt]
+root        14  0.0  0.0      0     0 ?        S    08:11   0:00 [rcub/0]
+root        15  0.0  0.0      0     0 ?        S    08:11   0:00 [rcuc/0]
+root        16  0.0  0.0      0     0 ?        S    08:11   0:00 [migration/0]
+root        17  0.0  0.0      0     0 ?        S    08:11   0:00 [cpuhp/0]
+root        18  0.0  0.0      0     0 ?        S    08:11   0:00 [cpuhp/1]
+root        19  0.0  0.0      0     0 ?        S    08:11   0:00 [migration/1]
+root        20  0.0  0.0      0     0 ?        S    08:11   0:00 [rcuc/1]
+root        21  0.0  0.0      0     0 ?        S    08:11   0:00 [ksoftirqd/1]
+root        23  0.0  0.0      0     0 ?        I<   08:11   0:00 [kworker/1:0H-events_highpri]
+root        24  0.0  0.0      0     0 ?        S    08:11   0:00 [cpuhp/2]
+root        25  0.0  0.0      0     0 ?        S    08:11   0:00 [migration/2]
+root        26  0.0  0.0      0     0 ?        S    08:11   0:00 [rcuc/2]
+root        27  0.0  0.0      0     0 ?        S    08:11   0:00 [ksoftirqd/2]
+root        29  0.0  0.0      0     0 ?        I<   08:11   0:00 [kworker/2:0H-kblockd]
+root        30  0.0  0.0      0     0 ?        S    08:11   0:00 [cpuhp/3]
+root        31  0.0  0.0      0     0 ?        S    08:11   0:00 [migration/3]
+root        32  0.0  0.0      0     0 ?        S    08:11   0:00 [rcuc/3]
+root        33  0.0  0.0      0     0 ?        S    08:11   0:00 [ksoftirqd/3]
+root        35  0.0  0.0      0     0 ?        I<   08:11   0:00 [kworker/3:0H-kblockd]
+root        36  0.0  0.0      0     0 ?        S    08:11   0:00 [kdevtmpfs]
+root        37  0.0  0.0      0     0 ?        I<   08:11   0:00 [netns]
+root        38  0.0  0.0      0     0 ?        S    08:11   0:00 [kauditd]
+root        40  0.0  0.0      0     0 ?        I    08:11   0:01 [kworker/1:1-mm_percpu_wq]
+root        41  0.0  0.0      0     0 ?        S    08:11   0:00 [oom_reaper]
+root        42  0.0  0.0      0     0 ?        I<   08:11   0:00 [writeback]
+root        43  0.0  0.0      0     0 ?        S    08:11   0:00 [kcompactd0]
+root        44  0.0  0.0      0     0 ?        SN   08:11   0:00 [ksmd]
+root        45  0.0  0.0      0     0 ?        SN   08:11   0:00 [khugepaged]
+root        51  0.0  0.0      0     0 ?        I    08:11   0:02 [kworker/3:1-mm_percpu_wq]
+root        61  0.0  0.0      0     0 ?        I    08:11   0:00 [kworker/2:1-events]
+root       101  0.0  0.0      0     0 ?        I<   08:11   0:00 [kintegrityd]
+root       102  0.0  0.0      0     0 ?        I<   08:11   0:00 [kblockd]
+root       103  0.0  0.0      0     0 ?        I<   08:11   0:00 [blkcg_punt_bio]
+root       104  0.0  0.0      0     0 ?        I<   08:11   0:00 [tpm_dev_wq]
+root       105  0.0  0.0      0     0 ?        I<   08:11   0:00 [tifm]
+root       106  0.0  0.0      0     0 ?        I<   08:11   0:00 [ata_sff]
+root       107  0.0  0.0      0     0 ?        I<   08:11   0:00 [edac-poller]
+root       108  0.0  0.0      0     0 ?        I<   08:11   0:00 [devfreq_wq]
+root       109  0.0  0.0      0     0 ?        S    08:11   0:00 [watchdogd]
+root       111  0.0  0.0      0     0 ?        I<   08:11   0:00 [kworker/1:1H-kblockd]
+root       112  0.0  0.0      0     0 ?        S    08:11   0:00 [kswapd0]
+root       114  0.0  0.0      0     0 ?        I<   08:11   0:00 [kthrotld]
+root       115  0.0  0.0      0     0 ?        I<   08:11   0:00 [nvme-wq]
+root       116  0.0  0.0      0     0 ?        I<   08:11   0:00 [nvme-reset-wq]
+root       117  0.0  0.0      0     0 ?        I<   08:11   0:00 [nvme-delete-wq]
+root       118  0.0  0.0      0     0 ?        S    08:11   0:00 [scsi_eh_0]
+root       119  0.0  0.0      0     0 ?        I<   08:11   0:00 [scsi_tmf_0]
+root       120  0.0  0.0      0     0 ?        S    08:11   0:00 [scsi_eh_1]
+root       121  0.0  0.0      0     0 ?        I<   08:11   0:00 [scsi_tmf_1]
+root       123  0.0  0.0      0     0 ?        S    08:11   0:00 [scsi_eh_2]
+root       124  0.0  0.0      0     0 ?        I<   08:11   0:00 [scsi_tmf_2]
+root       125  0.0  0.0      0     0 ?        S    08:11   0:00 [scsi_eh_3]
+root       126  0.0  0.0      0     0 ?        I<   08:11   0:00 [scsi_tmf_3]
+root       130  0.0  0.0      0     0 ?        I<   08:11   0:00 [kvub300c]
+root       131  0.0  0.0      0     0 ?        I<   08:11   0:00 [kvub300p]
+root       132  0.0  0.0      0     0 ?        I<   08:11   0:00 [kvub300d]
+root       133  0.0  0.0      0     0 ?        I<   08:11   0:00 [kmemstick]
+root       134  0.0  0.0      0     0 ?        I<   08:11   0:00 [ipv6_addrconf]
+root       143  0.0  0.0      0     0 ?        I<   08:11   0:00 [kstrp]
+root       144  0.0  0.0      0     0 ?        I<   08:11   0:00 [zswap-shrink]
+root       145  0.0  0.0      0     0 ?        I<   08:11   0:00 [kworker/u9:0]
+root       146  0.0  0.0      0     0 ?        I<   08:11   0:00 [kworker/0:1H-kblockd]
+root       195  0.0  0.0      0     0 ?        I    08:11   0:00 [kworker/3:2-events]
+root       196  0.0  0.0      0     0 ?        I<   08:11   0:00 [kworker/2:1H-kblockd]
+root       198  0.0  0.0      0     0 ?        I<   08:11   0:00 [kworker/3:1H-kblockd]
+root       231  0.0  0.0      0     0 ?        S    08:11   0:02 [jbd2/sda1-8]
+root       232  0.0  0.0      0     0 ?        I<   08:11   0:00 [ext4-rsv-conver]
+root       427  0.0  0.0  22900  3664 ?        Ss   08:11   0:00 /sbin/udevd --daemon
+root       448  0.0  0.0      0     0 ?        I<   08:11   0:00 [iprt-VBoxWQueue]
+root       464  0.0  0.0      0     0 ?        I<   08:11   0:00 [cryptd]
+root       480  0.0  0.0      0     0 ?        I    08:11   0:00 [kworker/1:2-events]
+root       505  0.0  0.0      0     0 ?        I<   08:11   0:00 [ttm_swap]
+root      1110  0.0  0.0   2524   104 ?        Ss   08:11   0:00 /usr/sbin/uuidd
+root      1111  0.0  0.8 1533316 73016 ?       Sl   08:11   0:04 /usr/bin/dockerd -p /var/run/docker.pid
+ntpsec    1128  0.0  0.2  84580 19012 ?        SLs  08:11   0:01 /usr/sbin/ntpd -p /run/ntpd.pid -c /etc/ntpsec/ntp.conf -g -N -u ntpsec:ntpsec
+root      1139  0.0  0.0   9148  2044 ?        Ss   08:11   0:00 /usr/sbin/cron
+message+  1147  0.0  0.0   4712  2540 ?        Ss   08:11   0:02 /usr/bin/dbus-daemon --system
+root      1148  0.0  0.0  11952  1188 ?        Ss   08:11   0:00 sshd: /usr/sbin/sshd [listener] 0 of 10-100 startups
+root      1175  0.0  0.0  13396  3620 ?        S    08:11   0:00 elogind-daemon
+root      1177  0.0  0.0   5732  2432 ?        Ss   08:11   0:00 /usr/sbin/dundee
+root      1178  0.0  0.0   9704  5660 ?        S    08:11   0:00 /usr/sbin/bluetoothd
+root      1181  0.0  0.0   8156  4340 ?        Ss   08:11   0:00 /usr/sbin/ofonod
+avahi     1187  0.0  0.0   3656  2344 ?        S    08:11   0:00 avahi-daemon: running [LocOs.local]
+avahi     1188  0.0  0.0   3480   188 ?        S    08:11   0:00 avahi-daemon: chroot helper
+root      1193  0.0  0.0   7692  3088 ?        Ss   08:11   0:00 /usr/sbin/lxdm-binary -d
+root      1202  2.9  1.8 975328 154508 tty7    Ssl+ 08:11   8:31 /usr/lib/xorg/Xorg :0 vt07 -nolisten tcp -novtswitch -auth /var/run/lxdm/lxdm-:0.auth
+root      1212  0.0  0.0  13596  3956 ?        Ss   08:11   0:00 /usr/sbin/connmand
+root      1241  0.0  0.0  13056  5432 ?        S    08:11   0:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+root      1261  0.1  0.5 1356096 42220 ?       Ssl  08:11   0:23 containerd --config /var/run/docker/containerd/containerd.toml
+root      1404  0.0  0.0 352008  1984 ?        Sl   08:11   0:06 /usr/sbin/VBoxService --pidfile /var/run/vboxadd-service.sh
+root      1421  0.0  0.0   8412  1028 tty1     Ss+  08:11   0:00 /sbin/getty --noclear 38400 tty1
+root      1422  0.0  0.0   8412  1032 tty2     Ss+  08:11   0:00 /sbin/getty 38400 tty2
+root      1423  0.0  0.0   8412  1064 tty3     Ss+  08:11   0:00 /sbin/getty 38400 tty3
+root      1424  0.0  0.0   8412  1060 tty4     Ss+  08:11   0:00 /sbin/getty 38400 tty4
+root      1425  0.0  0.0   8412  1028 tty5     Ss+  08:11   0:00 /sbin/getty 38400 tty5
+root      1426  0.0  0.0   8412  1060 tty6     Ss+  08:11   0:00 /sbin/getty 38400 tty6
+root      1612  0.0  0.0   7012  4016 ?        S    08:11   0:00 /usr/lib/lxdm/lxdm-session
+cosmo     1617  0.0  0.0 241120  7888 ?        Sl   08:11   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+cosmo     1620  0.0  0.1 253612 14444 ?        Ssl  08:11   0:04 /usr/bin/lxsession -s LXDE -e LXDE
+cosmo     1638  0.0  0.0   6644  1880 ?        S    08:11   0:00 dbus-launch --autolaunch a892886c80813b5dc843107d651185bf --binary-syntax --close-stderr
+cosmo     1639  0.0  0.0   4316   240 ?        Ss   08:11   0:00 /usr/bin/dbus-daemon --syslog-only --fork --print-pid 5 --print-address 7 --session
+cosmo     1660  0.0  0.0   6648  1816 ?        S    08:11   0:00 /usr/bin/dbus-launch --exit-with-session --sh-syntax
+cosmo     1661  0.0  0.0   4692  2136 ?        Ss   08:11   0:00 /usr/bin/dbus-daemon --syslog --fork --print-pid 5 --print-address 7 --session
+cosmo     1677  0.0  0.0  21712   352 ?        S    08:11   0:00 /usr/bin/VBoxClient --clipboard
+cosmo     1678  0.0  0.0 219900  2252 ?        Sl   08:11   0:00 /usr/bin/VBoxClient --clipboard
+cosmo     1692  0.0  0.0  21712   352 ?        S    08:11   0:00 /usr/bin/VBoxClient --seamless
+cosmo     1693  0.2  0.0 220000  2324 ?        Sl   08:11   0:38 /usr/bin/VBoxClient --seamless
+cosmo     1700  0.0  0.0  21712   356 ?        S    08:11   0:00 /usr/bin/VBoxClient --draganddrop
+cosmo     1701  0.2  0.0 220516  2384 ?        Sl   08:11   0:41 /usr/bin/VBoxClient --draganddrop
+cosmo     1713  0.0  0.0   7788  3000 ?        Ss   08:11   0:00 /usr/bin/ssh-agent startlxde
+cosmo     1721  0.0  0.1 240388  8256 ?        Sl   08:11   0:00 /usr/libexec/gvfsd
+cosmo     1730  0.1  0.3 235184 28960 ?        S    08:11   0:21 openbox --config-file /home/cosmo/.config/openbox/lxde-rc.xml
+cosmo     1731  0.2  0.0   6624  3140 ?        S    08:11   0:49 xscreensaver -no-splash
+cosmo     1734  0.0  0.1 179572 12828 ?        Sl   08:11   0:00 lxpolkit
+cosmo     1736  0.1  0.7 919380 64680 ?        Sl   08:11   0:27 lxpanel --profile LXDE
+cosmo     1737  0.1  0.8 567556 72052 ?        Sl   08:11   0:21 pcmanfm --desktop --profile LXDE
+cosmo     1738  0.0  1.3 747448 107276 ?       Sl   08:11   0:01 connman-gtk --tray
+cosmo     1741  0.0  0.0   6924  3464 ?        S    08:11   0:00 xscreensaver-systemd
+cosmo     1748  0.0  0.0   7660   776 ?        Ss   08:11   0:00 /usr/bin/ssh-agent -s
+polkitd   1752  0.0  0.1 306308  8344 ?        Sl   08:11   0:00 /usr/lib/polkit-1/polkitd --no-debug
+cosmo     1755  0.0  0.0 307632  6620 ?        Sl   08:11   0:00 /usr/libexec/at-spi-bus-launcher --launch-immediately
+cosmo     1778  0.0  0.0   4316  2956 ?        S    08:11   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 1
+cosmo     1797  0.0  0.0 236576  5248 ?        Sl   08:11   0:00 /usr/libexec/geoclue-2.0/demos/agent
+cosmo     1850  0.0  0.0  21712   348 ?        S    08:11   0:00 /usr/bin/VBoxClient --vmsvga
+cosmo     1851  0.0  0.0 220104  3508 ?        Sl   08:11   0:04 /usr/bin/VBoxClient --vmsvga
+cosmo     1857  0.0  0.3 733828 32200 ?        Sl   08:11   0:01 /usr/bin/pulseaudio --start --log-target=syslog
+cosmo     1861  0.0  0.0 156884  5640 ?        Sl   08:11   0:00 /usr/lib/menu-cache/menu-cached /run/user/1003/menu-cached-:0
+cosmo     1866  0.0  0.1 353352 12132 ?        Sl   08:11   0:00 /usr/libexec/gvfs-udisks2-volume-monitor
+root      1870  0.0  0.1 393640 13388 ?        Sl   08:11   0:00 /usr/libexec/udisks2/udisksd
+cosmo     1872  0.0  0.1 390164 11604 ?        Sl   08:11   0:00 /usr/libexec/xdg-desktop-portal
+cosmo     1880  0.0  0.0 460468  6908 ?        Sl   08:11   0:00 /usr/libexec/xdg-document-portal
+cosmo     1884  0.0  0.0 236664  5256 ?        Sl   08:11   0:00 /usr/libexec/xdg-permission-store
+root      1892  0.0  0.0   2480   992 ?        Ss   08:11   0:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1003/doc
+cosmo     1898  0.0  0.2 372704 21208 ?        Sl   08:11   0:00 /usr/libexec/xdg-desktop-portal-gtk
+cosmo     1904  0.0  0.0 160928  7276 ?        Sl   08:11   0:09 /usr/libexec/at-spi2-registryd --use-gnome-session
+cosmo     1919  0.0  0.0 241088  8068 ?        Sl   08:11   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+cosmo     1927  0.0  0.0 236260  6448 ?        Sl   08:11   0:00 /usr/libexec/gvfs-goa-volume-monitor
+cosmo     1933  0.0  0.0 236048  6580 ?        Sl   08:11   0:00 /usr/libexec/gvfs-mtp-volume-monitor
+cosmo     1938  0.0  0.0 237000  6976 ?        Sl   08:11   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+cosmo     1944  0.0  0.1 315144  8252 ?        Sl   08:11   0:01 /usr/libexec/gvfs-afc-volume-monitor
+cosmo     1964  0.0  0.0 314364  7820 ?        Sl   08:11   0:00 /usr/libexec/gvfsd-trash --spawner :1.3 /org/gtk/gvfs/exec_spaw/0
+cosmo     1998  1.4  0.8 436604 65416 ?        Sl   08:20   4:10 lxterminal
+cosmo     2001  0.0  0.0  11240  5700 pts/0    Ss+  08:20   0:01 bash
+root      3198  0.0  0.0      0     0 ?        I    09:33   0:00 [kworker/0:2-events]
+root      4082  0.0  0.0      0     0 ?        I    10:19   0:01 [kworker/0:3-events]
+cosmo     5485  0.0  0.0  11060  5440 pts/1    Ss   10:44   0:01 bash
+root      5603  0.0  0.0      0     0 ?        I    10:46   0:00 [kworker/2:0-events]
+cosmo     5815  0.0  0.0  11060  5452 pts/2    Ss   11:01   0:00 bash
+cosmo     8371  0.1  0.0  15436  7876 pts/2    Sl+  12:22   0:04 nvim mod3.c
+cosmo     8373  4.8  0.6 359028 56952 ?        Ssl  12:22   2:05 nvim --embed mod3.c
+cosmo     8376  1.2  0.5 653460 42948 ?        Ssl  12:22   0:33 /home/cosmo/.local/share/nvim/mason/bin/clangd
+cosmo     9829  0.0  0.0  10928  5352 pts/3    Ss   12:54   0:00 bash
+root      9959  0.0  0.0      0     0 ?        I    12:58   0:00 [kworker/u8:3-events_unbound]
+root      9960  0.1  0.0      0     0 ?        I    12:58   0:00 [kworker/u8:4-ext4-rsv-conversion]
+cosmo     9963  0.2  0.0  15304  7696 pts/3    Sl+  12:58   0:01 nvim s1.sh
+cosmo     9965  4.0  0.7 363012 60960 ?        Ssl  12:58   0:16 nvim --embed s1.sh
+cosmo    10037  0.0  0.0   7000  3228 ?        Ss   13:01   0:00 /usr/bin/xclip -quiet -i -selection clipboard
+root     10112  0.2  0.0      0     0 ?        I    13:04   0:00 [kworker/u8:0-events_power_efficient]
+cosmo    10120  0.0  0.0   9472  3148 pts/1    S+   13:04   0:00 /bin/bash ./s1.sh
+cosmo    10126  0.0  0.0   2460  1556 pts/1    S+   13:04   0:00 ./mod3.out
+cosmo    10127  0.0  0.0   2460  1452 pts/1    S+   13:04   0:00 ./mod3.out
+cosmo    10129  0.0  0.0   2576   912 pts/1    S+   13:04   0:00 sh -c ps aux > proc
+cosmo    10132  0.0  0.0  10352  4104 pts/1    R+   13:04   0:00 ps aux

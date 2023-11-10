@@ -1,0 +1,9 @@
+Hijo === pid: 10127, ppid: 10126
+El hijo ejecuta: ps aux > proc
+Padre === pid: 10126, ppid: 10120
+El padre ejecuta el script:
+ cat /etc/passwd | awk -F ":" '/^co/ {print "Usuario: ",$1,", PID: ",$3}' > usuarios
+
+./archivo_resultante.holabro
+./2.holabro
+./1.holabro
